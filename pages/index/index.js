@@ -2,7 +2,7 @@
 const auto = require("../../utils/auto")
 // 获取应用实例
 const app = getApp()
-Page(auto.checkLogin({
+Page({
   data: {
     motto: '晴川阁木s',
     userInfo: wx.getStorageSync('userInfo') || null,
@@ -103,4 +103,4 @@ Page(auto.checkLogin({
       }
     },)
   }
-}))
+})

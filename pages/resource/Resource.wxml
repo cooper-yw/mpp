@@ -1,2 +1,3 @@
-<!--pages/Resource.wxml-->
-<text>pages/Resource.wxml</text>
+<!--pages/resource/Resource.wxml-->
+<text>pages/resource/Resource.wxml</text>
+<text>{{app.globalData.userInfo}}</text>

@@ -1,11 +1,11 @@
 // index.js
+const auto = require("../../utils/auto")
 // 获取应用实例
 const app = getApp()
-
-Page({
+Page(auto.checkLogin({
   data: {
     motto: '晴川阁木s',
-    userInfo: {},
+    userInfo: wx.getStorageSync('userInfo') || null,
     loading: false,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -16,6 +16,13 @@ Page({
       //url: '../logs/logs'
       url: '../resource/resource'
     })
+  },
+  onLoad() {
+      if(wx.getStorageSync('userInfo')){
+        wx.reLaunch({
+          url: '/pages/home/index',
+        })
+      }
   },
   // onLoad() {
   //   if (app.globalData.userInfo) {
@@ -67,17 +74,33 @@ Page({
       
   //   }
   // },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    
+  },
+
   loginSubmit(e) {
-    console.log(e)
-    this.setData({loading: true})
-    const res = wx.request({
-      url: 'https://api.qcgm.club/service/auth/login',
+    const _this = this;
+    _this.setData({loading: true})
+    wx.request({
+      url: 'https://api.qcgm.club/server/console/auth/login',
       data: e.detail.value,
-      method: 'POST'
-    })
-    const {code, status} = res || {}
-    if(status === 200) {
-      this.setData({loading: false})
-    } 
+      method: 'POST',
+      success: function(res){
+        console.log(res)
+        const {statusCode, data:exData={}} = res || {}
+        const {status, code, data} = exData || {}
+        if(statusCode === 200 && code==="OK") {
+          _this.setData({loading: false})
+          wx.setStorageSync('userInfo', data);
+          wx.redirectTo({
+            url: '/pages/home/index',
+          })
+        } 
+      }
+    },)
   }
-})
+}))

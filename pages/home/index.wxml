@@ -1,0 +1,19 @@
+<!--pages/home/index.wxml-->
+<view class="pages">
+    <view wx:if="{{index === 0}}">
+        <message></message>
+    </view>
+    <view wx:if="{{index === 1}}">
+        <order></order>
+    </view>
+    <view wx:if="{{index === 2}}">
+        <infomation></infomation>
+        <drawline></drawline>
+        <import src="../infomation/index.wxml"/>
+        <template is="info" data="{{text: 'forbar'}}"/>
+    </view>
+    <view wx:if="{{index === 3}}">
+        <setting></setting>
+    </view>
+    <mp-tabbar ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{list}}" bindchange="tabChange"></mp-tabbar>
+</view>

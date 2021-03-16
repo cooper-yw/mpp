@@ -1,11 +1,12 @@
 {
   "useExtendedLib": {
-    "weui": true
+    "weui": false
   },
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/resource/Resource"
+    "pages/resource/Resource",
+    "pages/home/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

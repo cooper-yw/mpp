@@ -1,0 +1,4 @@
+<!--pages/infomation/index.wxml-->
+<template name="info">
+  <text>{{text}}</text>
+</template>

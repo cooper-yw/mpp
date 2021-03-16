@@ -1,11 +1,16 @@
 // pages/Resource.js
-Page({
+const auto = require("../../utils/auto")
+// 获取应用实例
+const app = getApp()
+
+Page(auto.checkLogin({
 
   /**
    * 页面的初始数据
    */
-  data: {
 
+  data: {
+      userInfo : app.globalData.userInfos
   },
 
   /**
@@ -63,4 +68,4 @@ Page({
   onShareAppMessage: function () {
 
   }
-})
+}))

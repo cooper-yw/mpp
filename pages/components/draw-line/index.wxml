@@ -1,0 +1,2 @@
+<!--pages/components/draw-line/index.wxml-->
+<view class="divLine"></view>

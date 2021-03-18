@@ -1,0 +1,13 @@
+/* pages/components/tabbar/index.wxss */
+.foot-tabbar {
+  background: #ffffff !important;
+}
+.tabbar--weui-tabbar__label {
+  color: #555555 !important;
+}
+.tabbar--weui-tabbar__item.tabbar--weui-bar__item_on .tabbar--weui-tabbar__label {
+  color: #2aa515 !important;
+}
+.show {
+  display: block;
+}

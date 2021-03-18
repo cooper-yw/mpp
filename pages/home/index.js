@@ -10,31 +10,34 @@ Page(auto.checkLogin({
     index: 0,
     list: [{
       "text": "消息",
-      "iconPath": "/pages/home/images/icon-png/message.png",
+      "iconPath": "/pages/home/images/icon-png/message_no.png",
       "selectedIconPath": "/pages/home/images/icon-png/message.png",
-      dot: true
+      dot: false
     },
     {
       "text": "订单",
-      "iconPath": "/pages/home/images/icon-png/order.png",
+      "iconPath": "/pages/home/images/icon-png/order_no.png",
       "selectedIconPath": "/pages/home/images/icon-png/order.png",
       dot: false
     },
     {
       "text": "个人中心",
-      "iconPath": "/pages/home/images/icon-png/info.png",
+      "iconPath": "/pages/home/images/icon-png/info_no.png",
       "selectedIconPath": "/pages/home/images/icon-png/info.png",
       dot: false
     },
     {
       "text": "设置",
-      "iconPath": "/pages/home/images/icon-png/setting.png",
+      "iconPath": "/pages/home/images/icon-png/setting_no.png",
       "selectedIconPath": "/pages/home/images/icon-png/setting.png",
       dot: false
     }]
   },
   tabChange(e) {
-    this.setData({index: e.detail.index});
+    const {detail = {}} = e || {}
+    const {index} = detail || {}
+  
+    this.setData({index});
   },
   onLoad:function() {
     this.setData({

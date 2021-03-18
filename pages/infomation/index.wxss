@@ -1,1 +1,33 @@
 /* pages/infomation/index.wxss */
+
+.connent-class {
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  height: 220px;
+  display: inherit;
+  background-color: #777;
+  background-image: src;
+}
+.head-class {
+  background-color: #888;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.image-round {
+  background-color: #ff1;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
+}
+.image-class {
+  height: 100px;
+  width: 100px;
+}

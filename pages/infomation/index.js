@@ -19,5 +19,6 @@ Component({
    */
   methods: {
 
-  }
+  },
+  externalClasses:['connent-class', 'head-class', 'image-round', 'image-class']
 })

@@ -1,14 +1,16 @@
 <!--pages/infomation/index.wxml-->
 <template name="info">
-  <view class="container" style="height: 300px;">
-      <view class="flex-wrp connent-class" style="flex-direction:column;background-image:url({{bi}})">
-        <view class="flex-item flex-item-V head-class">
-          <view class="image-round">
-            <image class="image-class" mode="center" src="../home/images/icon-png/info.png"></image>
-          </view>
+  <view class="container" style="height: 260px;">
+    <view class="flex-wrp content-class" style="flex-direction:column;background-image:url({{bi}})">
+      <view class="flex-item flex-item-V head-class">
+        <view class="image-round">
+          <image class="image-class" mode="aspectFill" src="{{avatar}}"></image>
+        </view>
       </view>
+      <view class="flex-item flex-item-V" style="color: #f9f6f6;font-size: 18px; position: relative;display: inline-block; margin-top: 10px; text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;">YTF.</view>
+      <view class="flex-item flex-item-V"><view style="color: #f9f6f6;font-size: 16px; position: relative;display: inline-block; margin-top: 10px; text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;">个人简介</view><icon class="icon-small" type="search" size="14"></icon></view>
+    </view>
   </view>
-</view>
 <view>
   1111111
 </view>

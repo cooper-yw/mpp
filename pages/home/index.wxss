@@ -16,11 +16,11 @@
   display: none;
 }
 
-.connent-class {
+.content-class {
   /* flex-direction: column; */
   width: 100%;
   align-items: center;
-  position: absolute;
+  position: relative;
   height: 220px;
   display: inherit;
   border: 1px solid rgb(228, 223, 223);
@@ -33,7 +33,7 @@
   align-items: center;
   width: 100px;
   height: 100px;
-  position: absolute;
+  position: relative;
   padding-top:20px;
   /* border: gray solid 1px;
   border-radius: 50%;
@@ -44,7 +44,7 @@
   /* background-color: #ff1; */
   width: 100px;
   height: 100px;
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   border: 1px solid  rgb(228, 223, 223);
   overflow: hidden;

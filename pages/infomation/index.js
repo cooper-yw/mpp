@@ -7,7 +7,11 @@ Component({
     bi:{
       value: '',
       type:String
-    }
+    },
+    avatar:{
+      value: '',
+      type:String
+    },
   },
 
   /**

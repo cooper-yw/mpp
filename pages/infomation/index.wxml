@@ -1,7 +1,7 @@
 <!--pages/infomation/index.wxml-->
 <template name="info">
   <view class="container" style="height: 300px;">
-      <view class="flex-wrp connent-class" style="flex-direction:column;">
+      <view class="flex-wrp connent-class" style="flex-direction:column;background-image:url({{bi}})">
         <view class="flex-item flex-item-V head-class">
           <view class="image-round">
             <image class="image-class" mode="center" src="../home/images/icon-png/info.png"></image>

@@ -8,7 +8,7 @@
     </view>
     <view wx:if="{{index === 2}}">
         <import src="../infomation/index.wxml"></import>
-        <template is="info" content-class="content-classs" head-class="head-class" image-round="image-round" image-class="image-round"></template>
+        <template is="info" content-class="content-classs" head-class="head-class" image-round="image-round" image-class="image-round" data="{{bi:images}}" ></template>
     </view>
     <view wx:if="{{index === 3}}">
         <setting></setting>

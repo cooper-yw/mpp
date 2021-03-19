@@ -8,6 +8,8 @@ Page(auto.checkLogin({
    */
   data: {
     index: 0,
+    userinfo: wx.getStorageSync('userInfo') || null,
+    images: './images/mpp1.png',
     list: [{
       "text": "消息",
       "iconPath": "/pages/home/images/icon-png/message_no.png",

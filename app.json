@@ -1,6 +1,6 @@
 {
   "useExtendedLib": {
-    "weui": false
+    "weui": true
   },
   "pages": [
     "pages/index/index",

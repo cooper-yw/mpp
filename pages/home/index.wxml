@@ -1,6 +1,6 @@
 <!--pages/home/index.wxml-->
-<view class="pages">
-    <view wx:if="{{index === 0}}">
+<view class="pages" style="width: 749rpx; height: 44rpx; display: block; box-sizing: border-box">
+    <!-- <view wx:if="{{index === 0}}">
         <message></message>
     </view>
     <view wx:if="{{index === 1}}">
@@ -12,6 +12,7 @@
     </view>
     <view wx:if="{{index === 3}}">
         <setting></setting>
-    </view>
-    <tabbar data="{{list}}" bind:tabChange="tabChange"></tabbar>
+    </view> -->
+    <tabbar></tabbar>
 </view>
+<view>11111111222222222message home</view>

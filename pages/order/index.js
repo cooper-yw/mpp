@@ -1,34 +1,20 @@
-const auto = require("../../utils/auto");
-const routes = require("../../utils/routes");
-
-// pages/home/index.js
-Page(auto.checkLogin({
+// pages/order/index.js
+Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    index: 0,
-    userinfo: wx.getStorageSync('userInfo') || null,
-    images: './images/mpp1.png',
-    avatar: './images/mpp2.png',
-    list: routes.items()
+
   },
-  tabChange(e) {
-    const {detail = {}} = e || {}
-    const {index} = detail || {}
-  
-    this.setData({index});
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
   },
-  onLoad:function() {
-    console.log(routes.items())
-    this.setData({
-      nbTitle: '首席MYG',
-      nbLoading: false,
-      nbFrontColor: '#ffffff',
-      nbBackgroundColor: '#000000',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -39,10 +25,9 @@ Page(auto.checkLogin({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function (e) {
-      console.log(e)
+  onShow: function () {
+
   },
-  
 
   /**
    * 生命周期函数--监听页面隐藏
@@ -78,4 +63,4 @@ Page(auto.checkLogin({
   onShareAppMessage: function () {
 
   }
-}))
+})

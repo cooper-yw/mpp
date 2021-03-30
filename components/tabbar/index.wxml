@@ -1,0 +1,2 @@
+<!--pages/components/tabbar/index.wxml-->
+<mp-tabbar current="{{index}}" ext-class="foot-tabbar" style="position:fixed;bottom:0;width:100%;left:0;right:0;" list="{{data}}" bindchange="tabChange"></mp-tabbar>

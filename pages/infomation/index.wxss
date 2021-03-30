@@ -1,29 +1,36 @@
 /* pages/infomation/index.wxss */
 
-.connent-class {
-  flex-direction: column;
+.content-class {
+  /* flex-direction: column; */
   width: 100%;
   align-items: center;
-  position: absolute;
+  position: relative;
   height: 220px;
   display: inherit;
-  background-color: #777;
-  background-image: src;
+  border: 1px solid rgb(228, 223, 223);
+  background-image: url({{images}});
+  /* background-color: #777; */
+  /* background-image:url('/pages/home/images/mpp1.png'); */
 }
 .head-class {
-  background-color: #888;
+  /*background-color: #888;*/
   align-items: center;
   width: 100px;
   height: 100px;
-  position: absolute;
+  position: relative;
+  padding-top:20px;
+  /* border: gray solid 1px;
+  border-radius: 50%;
+  overflow: hidden; */
 }
 
 .image-round {
-  background-color: #ff1;
+  /* background-color: #ff1; */
   width: 100px;
   height: 100px;
-  position: absolute;
+  position: relative;
   border-radius: 50%;
+  border: 1px solid  rgb(228, 223, 223);
   overflow: hidden;
   align-items: center;
 }

@@ -1,0 +1,11 @@
+<!--components/avatar/index.wxml-->
+<view class="container flex"  wx:if="{{!showCropper}}">
+    <view>
+        <image src="{{src}}" class="avatar" bindtap="upload"></image>
+        <view class="item flex" bindtap="upload">click me</view>
+    </view>
+</view>
+
+<view class="cropper-wrapper" wx:if="{{showCropper}}">
+  <uploadCropper src="{{cropperSrc}}"></uploadCropper>
+</view>

@@ -2,11 +2,7 @@
   "usingComponents": {
     "mp-tabs": "@miniprogram-component-plus/tabs/",
     "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
-    "message": "/pages/components/message/index",
-    "order": "/pages/components/order/index",
-    "infomation": "/pages/components/infomation/index",
-    "setting": "/pages/components/setting/index",
-    "drawline": "/pages/components/draw-line/index",
-    "tabbar": "/pages/components/tabbar/index"
+    "drawline": "/components/draw-line/index",
+    "tabbar": "/components/tabbar/index"
   }
 }

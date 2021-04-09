@@ -14,7 +14,7 @@ Component({
   },
 
   lifetimes: {
-      attached(){
+    attached(){
         console.log(111)
         this.setData({index:wx.getStorageSync('showIndex')})
       }
@@ -34,7 +34,7 @@ Component({
       const {detail = {}} = e || {}
       const {item = {}} = detail ||  {}
       const {path} = item ||  {}
-      wx.switchTab({
+      wx.redirectTo({
         url: path,
       })
     },

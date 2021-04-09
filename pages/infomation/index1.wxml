@@ -1,6 +1,5 @@
 <!--pages/infomation/index.wxml-->
-<!--pages/infomation/index.wxml-->
-<!-- <tabbar></tabbar> -->
+<tabbar></tabbar>
 <view class="container" style="height: 260px;">
   <view class="flex-wrp content-class" style="flex-direction:column;background-image:url({{bi}})">
     <view class="flex-item flex-item-V head-class">
@@ -15,4 +14,3 @@
 <view>
   1111111
 </view>
-

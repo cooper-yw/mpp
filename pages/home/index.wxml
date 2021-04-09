@@ -13,6 +13,6 @@
     <view wx:if="{{index === 3}}">
         <setting></setting>
     </view> -->
-    <tabbar></tabbar>
+    <!-- <tabbar></tabbar> -->
 </view>
 <view>11111111222222222message home</view>
